@@ -1,38 +1,98 @@
-.App {
-  text-align: center;
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body{
+  scroll-behavior: smooth;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.navbar__back{
+background-color: aquamarine;
 }
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+.navbar{
+  z-index: 2;
 }
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+.navbar__inner{
+  background-color: aqua;
+  width: 950px !important;
+  max-width: 950px !important;
+  margin: 0 auto;
+}
+.logo{
+  width: 110px;
   display: flex;
-  flex-direction: column;
   align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+ 
+}
+.logo img{
+  width: 80%;
+}
+.width70vh {
+height: 70vh !important;
+}
+.picwidth{
+  height: 70vh !important;
+}
+.left{
+  text-align: left;
+  font-family: 'Shippori Mincho', serif;
+}
+.carusal__img img{
+  width: 100%;
+  height: 100%;
+  background-size: contain;
+
 }
 
-.App-link {
-  color: #61dafb;
+.transform__img:hover {
+  transform: rotate(0) scale(1);
+  overflow: hidden;
 }
+.gallery{
+  font-family: 'Shippori Mincho', serif;
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
 }
+.transform__img{
+  width: 100%;
+  overflow: hidden;
+}
+.transform__img img{
+  width: 100%;
+}
+.transform__img:hover{
+  transform: scale(1.1);
+  transition: 0.6s ease;
+
+}
+.check{
+  background:url("./images/a1.jpg");
+  background-size: cover;
+  background-attachment: fixed;
+  background-repeat: no-repeat;
+  height: 45vh;
+}
+.checkdata{
+  height: 45vh;
+}
+.tsparticles-canvas-el{
+  position: absolute;
+  height: 100vh;
+  width: 100vw;
+  z-index: 1;
+}
+.footer p{
+  margin-bottom: 0;
+  font-weight: 400;
+  padding: 10px 0;
+}
+.type{
+  font-size: 30px;
+  
+}
+  @media (min-width: 360px) {
+    .about{
+      margin: 10px 0;
+    }
+  }
+  
